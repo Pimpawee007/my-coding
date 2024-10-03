@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "3-17โอลิมปิกวิชาการ67.6-2048x1717.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "3-17โอลิมปิกวิชาการ67.6-2048x1717 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "3-17โอลิมปิกวิชาการ67.6-2048x1717 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
