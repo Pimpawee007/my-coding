@@ -1,19 +1,38 @@
-print('Mhiyok Chong ยินดีต้อนรับ\nร้านนี้ทุกเมนูราคา 50 บาท หากเป็นสมาชิกจะได้รับส่วนลด 10%')
-p=50
-member=str(input('คุณเป็นสมาชิกไหม? : '))
-menu=str(input('ต้องการสั่งเมนูอะไร : '))
-topping=str(input('ต้องการใส่ topping เพิ่มไหม : '))
-if topping=='ใช่':
-    what=str(input('เลือกTopping :' ))
-    if what=='ไข่มุก':
-        price=p+5
-    if what=='บุก':
-        price=p+10
-    if what=='ไข่มุกบราวชูการ์':
-        price=p+10
-else:
-    price=p
-if member=='ใช่':
-    print(f'ราคาทั้งหมด : {round((price*(100-10))/100,2)} บาท จาก {round(price,2)} บาท')
-else:
-    print(f'ราคาทั้งหมด : {round(price,2)} บาท')
+while True:
+    m = input('Have you a member? (Y or N) : ')
+    if m == "Stop":
+        print('Your welcome!')
+        break
+
+    if m != 'Y' and m != 'N':
+        print('Please enter only "Y or N"\n--------------------------')
+        continue
+
+    s = input('Choose size (M or L) : ')
+    if s == "Stop":
+        print('Your welcome!')
+        break
+    elif s == 'M':
+        price = 50
+    elif s == 'L':
+        price = 60
+    else:
+        print('Please enter only "M or L"\n--------------------------')
+        continue
+
+    t = input('Topping (Y or N) : ')
+    if t == "Stop":
+        print('Your welcome!')
+        break
+    elif t == 'N':
+        price -= 10
+    elif t != 'Y':
+        print('Please enter only "Y or N"\n--------------------------')
+        continue
+
+    if m == 'Y':
+        total = (price * 90) / 100
+    else:
+        total = price
+
+    print(f'Total price : {total} THB\n====== Thanks! ======')
